@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // write a class to calculate uber price
+
+        class uber{
+            constructor(distance){
+                
+                this.distance = distance
+                this.price = distance * 4;
+            }
+          
+            getPrice(){
+                //let priceperkm = 4
+                let total = this.price
+                return total
+            }
+            getDiscount(){                
+                let percent = this.price * 25/100
+                console.log("25% discount is: ", percent)
+                var discountedPrice = this.price - percent
+                return `The discounted price is: ", ${discountedPrice}`
+            }
+        }
+                    
+        var s1 = new uber(60)
+        console.log(s1)
+        console.log(s1.getPrice())
+        console.log(s1.getDiscount())
+
+        var s2 = new uber(20)
+        console.log(s2)
+        console.log(s2.getPrice())
+        console.log(s2.getDiscount())        
+
+    </script>
+    
+</body>
+</html>
